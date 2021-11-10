@@ -8,6 +8,72 @@ from typing import List
 # Crianting the console
 console_main: console.Console = console.Console()
 
+def cheking_the_password(password: str) -> None:
+
+    count_special_character: int = 0
+    count_len: int = len(password)
+    exists_spacial_character: bool = False
+    exists_number: bool = False
+    count_numbers: int = 0
+    status: str = ""
+    points: int = 0
+    exists_uppercase_letter: bool = False
+
+    # Progress bar
+    print()
+    for letter in progress.track(password, "Verify your password..."):
+        if letter in ["@", "!", "#", "%", "*", "&", ">", "<", "¨"]:
+            
+            count_special_character += 1
+            exists_spacial_character = True
+        
+        if letter.isupper():
+            exists_uppercase_letter = True
+        
+        else:
+            try:
+                int(letter)
+                count_numbers += 1
+            except ValueError:
+                pass
+            else:
+                exists_number = True
+
+        sleep(0.5)
+        
+    if exists_number:
+        points += 2
+
+    if exists_spacial_character and count_special_character >= 3:
+        points += 5
+
+    elif count_special_character < 3:
+        points += 2
+
+    if exists_uppercase_letter:
+        points += 4
+
+    if 1 < points <= 7:
+        status = "[red]Password weak[/] :x:"
+
+    elif 8 <= points <= 10:
+        status = "[yellow]Password reasonable[/]"
+
+    elif points > 10:
+        status = "[green]Password strong[/] :white_check_mark:"
+
+    print("[green]=[/]" * 50)
+    print(
+        f"Exists spacial characters.................... {exists_spacial_character}\n"
+        f"Exists numbers:.............................. {exists_number}\n"
+        f"The amount spacial characters:............... {count_special_character}\n"
+        f"The amount of numbers:....................... {count_numbers}\n"
+        f"Len of password:............................. {count_len}\n\n"
+        f"Status: {status}"
+    )
+    print("[green]=[/]" * 50)
+
+
 def verify_password() -> None:
     
     print()
