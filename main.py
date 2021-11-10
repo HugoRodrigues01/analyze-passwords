@@ -85,6 +85,9 @@ def verify_password() -> None:
         print("[red]Your password must be at least [blue]16[/] digits long.[/]\nPleas type your password again.\n")
 
         password = console_main.input("[bold]Your password[/] [green]>>>[/] ")
+    
+    # Calling the verify the password
+    cheking_the_password(password)
 
 def main() -> None:
 
