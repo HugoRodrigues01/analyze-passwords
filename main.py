@@ -118,7 +118,7 @@ def main() -> None:
     )
     print("-" * 50)
 
-    VALID_OPTIONS: List[str] = ["1", "2", "3", "6"]
+    VALID_OPTIONS: List[str] = ["1", "2", "3", "4", "5", "6"]
 
     option: str = console_main.input("Type an option above [green]>>>[/] ")
 
