@@ -3,6 +3,8 @@
 from rich import print, table, console, progress
 from time import sleep
 from typing import List
+from utils import SPACIAL_CHARACTER, randoming_password, credits
+import os
 
 # Crianting the console
 console_main: console.Console = console.Console()
