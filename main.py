@@ -33,7 +33,7 @@ def cheking_the_password(password: str) -> None:
     # count the points for the password
     print()
     for letter in progress.track(password, "Verify your password..."):
-        if letter in ["@", "!", "#", "%", "*", "&", ">", "<", "¨"]:
+        if letter in SPACIAL_CHARACTER:
             
             count_special_character += 1
             exists_spacial_character = True
