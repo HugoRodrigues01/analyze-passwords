@@ -16,6 +16,9 @@ def version() -> None:
     print("-" * 50)
 
 def cheking_the_password(password: str) -> None:
+    """
+    This function will cheking your password.
+    """
 
     count_special_character: int = 0
     count_len: int = len(password)
