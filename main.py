@@ -50,7 +50,7 @@ def cheking_the_password(password: str) -> None:
             else:
                 exists_number = True
 
-        sleep(0.5)
+        sleep(0.2)
         
     if exists_number:
         points += 2
