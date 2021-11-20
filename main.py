@@ -73,6 +73,7 @@ def cheking_the_password(password: str) -> None:
     elif points > 10:
         status = "[green]Password strong[/] :white_check_mark:"
 
+    print()
     print("[green]=[/]" * 50)
     print(
         f"Exists spacial characters.................... {exists_spacial_character}\n"
