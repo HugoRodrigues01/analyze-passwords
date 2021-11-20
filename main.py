@@ -30,6 +30,7 @@ def cheking_the_password(password: str) -> None:
     exists_uppercase_letter: bool = False
 
     # Progress bar
+    # count the points for the password
     print()
     for letter in progress.track(password, "Verify your password..."):
         if letter in ["@", "!", "#", "%", "*", "&", ">", "<", "¨"]:
