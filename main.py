@@ -132,8 +132,33 @@ def main() -> None:
         case "1":
             verify_password()
 
-        case "2": pass
-        case "3": pass
+            print()
+            main()
+
+        case "2":
+            print("-" * 50)
+
+            # create a new randoming password
+            print(f"Your password :lock:: [bold white on purple]{randoming_password()}[]")
+            print("-" * 50)
+
+            print()
+            main()
+
+        case "3":
+            credits()
+
+            main()
+
+        case "4": 
+            os.system("clear")
+            
+            main()
+        
+        case "5":
+            version()
+
+            main()
 
         case "6":
             # Closing the program
