@@ -85,7 +85,6 @@ def cheking_the_password(password: str) -> None:
     )
     print("[green]=[/]" * 50)
 
-
 def verify_password() -> None:
     
     print()
