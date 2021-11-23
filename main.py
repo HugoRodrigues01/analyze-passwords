@@ -113,7 +113,6 @@ def main() -> None:
         "3 - Credits\n"
         "4 - Clear the terminal\n"
         "5 - Version\n"
-        "3 - Credits\n"
         "6 - Exit :x:"
     )
     print("-" * 50)
