@@ -12,7 +12,7 @@ console_main: console.Console = console.Console()
 def version() -> None:
     print()
     print("-" * 50)
-    print("Version: [blue bold]1.10.1[/]v")
+    print("Version: [blue bold]1.10.4[/]v")
     print("-" * 50)
 
 def cheking_the_password(password: str) -> None:
