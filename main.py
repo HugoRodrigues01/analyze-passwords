@@ -138,7 +138,7 @@ def main() -> None:
             print("-" * 50)
 
             # create a new randoming password
-            print(f"Your password :lock:: [bold white on purple]{randoming_password()}[]")
+            print(f"Your password :lock:: [bold white on purple]{randoming_password()}[/]")
             print("-" * 50)
 
             print()
