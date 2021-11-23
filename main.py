@@ -110,6 +110,7 @@ def main() -> None:
     print(
         "1 - Verify your password :white_check_mark:\n"
         "2 - Creating a new random password\n"
+        "3 - Credits\n"
         "4 - Clear the terminal\n"
         "5 - Version\n"
         "3 - Credits\n"
